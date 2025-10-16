@@ -1,4 +1,5 @@
-
+@echo off
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/krauson/rubber-ducky/main/youBeenHacked.jpg" -OutFile "youBeenHacked.jpg"
 
 $hwnd = Get-Process -Id $PID | ForEach-Object { $_.MainWindowHandle }
 [WinAPI]::SetForegroundWindow($hwnd)
@@ -47,7 +48,9 @@ $form.FormBorderStyle = 'None'
 $form.TopMost = $true
 $form.BackColor = 'Black'
 
-$image = [System.Drawing.Image]::FromFile("youBeenHacked.jpg")
+
+$imagePath = "$env:USERPROFILE\Desktop\youBeenHacked.jpg"
+$image = [System.Drawing.Image]::FromFile($imagePath)
 $pictureBox = New-Object Windows.Forms.PictureBox
 $pictureBox.Image = $image
 $pictureBox.SizeMode = 'StretchImage'
