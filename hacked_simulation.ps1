@@ -54,7 +54,7 @@ $form.TopMost = $true
 $form.BackColor = 'Black'
 
 
-$imagePath = "$env:USERPROFILE\Desktop\youBeenHacked.jpg"
+$imagePath = "C:\Users\Brinks\Desktop\hack\youBeenHacked.jpg"
 $image = [System.Drawing.Image]::FromFile($imagePath)
 $pictureBox = New-Object Windows.Forms.PictureBox
 $pictureBox.Image = $image
