@@ -17,7 +17,6 @@ $host.UI.RawUI.ForegroundColor = "Green"
 Clear-Host
 
 # Simulated attack sequence
-Write-Host "$pwd"
 Write-Host "Initializing breach protocol..." -ForegroundColor Green
 Start-Sleep -Seconds 2
 Write-Host "Bypassing firewall..."
