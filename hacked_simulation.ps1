@@ -4,6 +4,7 @@ New-Item -ItemType Directory -Path "$env:USERPROFILE\Desktop\hack"
 Move-Item "$env:USERPROFILE\Desktop\hacked_simulation.ps1" "$env:USERPROFILE\Desktop\hack"
 Move-Item "$env:USERPROFILE\Desktop\youBeenHacked.jpg" "$env:USERPROFILE\Desktop\hack"
 
+Write-Host "$pwd"
 
 $hwnd = Get-Process -Id $PID | ForEach-Object { $_.MainWindowHandle }
 [WinAPI]::SetForegroundWindow($hwnd)
