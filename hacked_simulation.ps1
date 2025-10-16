@@ -29,7 +29,7 @@ Start-Sleep -Seconds 2
 # Fake file listing
 for ($i=1; $i -le 10; $i++) {
     Write-Host "File_$i.txt [OK]"
-    Start-Sleep -Milliseconds 300
+    Start-Sleep -Milliseconds 100
 }
 
 # Fake upload
