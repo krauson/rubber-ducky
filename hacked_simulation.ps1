@@ -1,4 +1,3 @@
-@echo off
 Invoke-WebRequest -Uri "https://raw.githubusercontent.com/krauson/rubber-ducky/main/youBeenHacked.jpg" -OutFile "youBeenHacked.jpg"
 
 $hwnd = Get-Process -Id $PID | ForEach-Object { $_.MainWindowHandle }
